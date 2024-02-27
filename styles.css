@@ -291,7 +291,7 @@ img {
 
 @keyframes changeColor {
     0% {
-        background-position: 50% 400%;
+        background-position: 50% 500%;
     }
 
     100% {
