@@ -280,7 +280,7 @@ img {
     margin-bottom: var(--mb-1);
 }
 
-.home__description-gradient
+.home__description-gradient {
     background: linear-gradient(hsl(var(--hue-color), 6%, 40%),  hsl(var(--hue-color), 70%, 50%),  hsl(179, 63%, 35%),  hsl(8, 55%, 48%),hsl(var(--hue-color), 6%, 40%));
     color: transparent;
     background-clip: text;
