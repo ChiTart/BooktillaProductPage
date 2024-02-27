@@ -17,9 +17,6 @@
     --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 40%), hsl(var(--hue-color), 3%, 7%));
     /* TODO: Aggiungere transizione colori */
     --color-gradient: linear-gradient(hsl(var(--hue-color), 6%, 40%), hsl(var(--hue-color), 4%, 10%));
-    --color-gradient2: linear-gradient(hsl(var(--hue-color), 70%, 50%), hsl(var(--hue-color), 4%, 10%));
-    --color-gradient3: linear-gradient(hsl(179, 63%, 35%), hsl(var(--hue-color), 4%, 10%));
-    --color-gradient4: linear-gradient(hsl(8, 55%, 48%), hsl(var(--hue-color), 4%, 10%));
     --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
     --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
 
@@ -283,116 +280,23 @@ img {
     margin-bottom: var(--mb-1);
 }
 
-.home__description-gradient{
-    animation: changeColor 30s linear infinite;
-    -webkit-animation: changeColor 30s linear infinite;
+.home__description-gradient
+    background: linear-gradient(hsl(var(--hue-color), 6%, 40%),  hsl(var(--hue-color), 70%, 50%),  hsl(179, 63%, 35%),  hsl(8, 55%, 48%),hsl(var(--hue-color), 6%, 40%));
+    color: transparent;
+    background-clip: text;
+    background-size: auto 500%;
+    animation: changeColor 80s ease-in-out infinite;
+    -webkit-animation: changeColor 80s ease-in-out infinite;
 }
 
 @keyframes changeColor {
-
     0% {
-        background: var(--color-gradient);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-}
-
-    12% {
-        background: var(--color-gradient);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
+        background-position: 50% 400%;
     }
-
-    13% {
-        background: var(--color-gradient2);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-    }
-
-    25% {
-        background: var(--color-gradient2);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-    }
-
-    37% {
-        background: var(--color-gradient2);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-    }
-
-    38% {
-        background: var(--color-gradient3);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-    }
-
-    50% {
-        background: var(--color-gradient3);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-    }
-
-    62% {
-        background: var(--color-gradient3);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-    }
-
-    64% {
-        background: var(--color-gradient4);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-    }
-
-    75% {
-        background: var(--color-gradient4);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-    }
-
-    87% {
-        background: var(--color-gradient4);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-    }
-
-    89% {
-        background: var(--color-gradient);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0.15;
-}
 
     100% {
-        background: var(--color-gradient);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-}
+        background-position: 50% 0%;
+    }
 }
 
 
